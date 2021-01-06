@@ -12,6 +12,7 @@ Pipfile.lock
 # databases - For this tutorial we need this commented
 # db.*
 # *.sqlite3
+0001_initial.py
 
 #keys
 secrets.json

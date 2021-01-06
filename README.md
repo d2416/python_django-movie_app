@@ -3,6 +3,19 @@
 1. [Initial Setup Instructions](#initial-setup-instructions)
 2. [Running Server](#running-server)
 
+## Quick start the app
+Use the following commands to launch and try the app
+* Notice that you must install python before
+```buildoutcfg 
+python -m venv venv
+source venv/Script/activate
+pip install -r requirements.txt
+
+./manage.py makemigrations
+./manage.py migrate
+
+./manage.py runserver
+```
 
 ## Initial Setup Instructions
 
@@ -20,7 +33,6 @@ pip freeze                          // check if requirements were well installed
 ```
 ### Go and check `http://127.0.0.1:8000`
 
-```buildoutcfg ```
 
 ## Create a module
 ```buildoutcfg 
@@ -38,10 +50,15 @@ INSTALLED_APPS = [
 Go to <module>/models.py and create one class for each table using 'models.Model' as parameter for the class constructor
 'documentation: https://docs.djangoproject.com/en/3.1/ref/models/fields/'
 
-
-## Cheatsheet
-
+```buildoutcfg ```
 ## Manage the database
+Create database from information given in movies/models.py
+Django convert python code to SQL code and create database and table(s)
+```buildoutcfg 
+./manage.py makemigrations                  // create our tables
+./manage.py migrate                         // add our tables and django tables to database
+```
+
 ### From the python console
 ```buildoutcfg
 sqlite3 todo.db             // create database
