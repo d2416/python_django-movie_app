@@ -16,6 +16,9 @@ pip freeze > requirements.txt       // write list of requirements in requirement
 pip install -r requirements.txt     // install requirements
 ```
 ## Running Server
+```buildoutcfg
+./manage.py runserver
+```
 ### Cheatsheet
 ```buildoutcfg
 sqlite3 todo.db             // create database

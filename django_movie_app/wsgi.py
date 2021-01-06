@@ -1,5 +1,5 @@
 """
-WSGI config for cp_django_movie_app project.
+WSGI config for django_movie_app project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
