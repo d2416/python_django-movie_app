@@ -11,15 +11,26 @@
 python -m venv venv                 // create virtual environment
 source venv/Script/activate         // activate the virtual env
                                     // to deactivate the virtual environment just run: 'deactivate'
-pip freeze                          // check if requirements are installed
-pip freeze > requirements.txt       // write list of requirements in requirements.txt file
 pip install -r requirements.txt     // install requirements
+pip freeze                          // check if requirements were well installed
 ```
 ## Running Server
 ```buildoutcfg
-./manage.py runserver
+./manage.py runserver       // launch server
 ```
-### Cheatsheet
+### Go and check `http://127.0.0.1:8000`
+
+```buildoutcfg ```
+
+## Create a module
+```buildoutcfg 
+./manage.py startapp <module>
+```
+
+## Cheatsheet
+
+## Manage the database
+### From the python console
 ```buildoutcfg
 sqlite3 todo.db             // create database
     .tables                 // no tables have been created yet
@@ -31,15 +42,12 @@ python
 sqlite3 todo.db             // access to the database
     .tables                 // show the tables
     .exit
-python app.py               // launch server
 ```
-### Go and check `http://127.0.0.1:5000`
 
-## Managin the database
+### Go into the python console then:
 use request, redirect, url_for from Falsk
 "from flask import Flask, render_template, request, redirect, url_for"
 ```buildoutcfg
-### Go into the python console then:
 
 from app import db              // call the database to use
 db                              // check database
