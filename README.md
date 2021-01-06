@@ -27,10 +27,17 @@ pip freeze                          // check if requirements were well installed
 ./manage.py startapp <module>
 ```
 Go to settings.py inside app folder (ie. django_movie_app) and add the new module (ie. movies)
+```buildoutcfg 
 INSTALLED_APPS = [
     ...
     'movies',
 ]
+```
+
+## Create model (database) for a module
+Go to <module>/models.py and create one class for each table using 'models.Model' as parameter for the class constructor
+'documentation: https://docs.djangoproject.com/en/3.1/ref/models/fields/'
+
 
 ## Cheatsheet
 
