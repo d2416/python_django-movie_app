@@ -13,6 +13,7 @@ pip install -r requirements.txt
 
 ./manage.py makemigrations
 ./manage.py migrate
+./manage.py createuseruser
 
 ./manage.py runserver
 ```
@@ -57,6 +58,7 @@ Django convert python code to SQL code and create database and table(s)
 ```buildoutcfg 
 ./manage.py makemigrations                  // create our tables
 ./manage.py migrate                         // add our tables and django tables to database
+./manage.py createsuperuser                 // create user admin
 ```
 
 ### From the python console
