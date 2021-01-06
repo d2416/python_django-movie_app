@@ -26,6 +26,11 @@ pip freeze                          // check if requirements were well installed
 ```buildoutcfg 
 ./manage.py startapp <module>
 ```
+Go to settings.py inside app folder (ie. django_movie_app) and add the new module (ie. movies)
+INSTALLED_APPS = [
+    ...
+    'movies',
+]
 
 ## Cheatsheet
 
